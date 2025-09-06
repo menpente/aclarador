@@ -1,1 +1,7 @@
 Groq
+streamlit
+langchain
+chromadb
+sentence-transformers
+pypdf
+langchain-community
