@@ -1,0 +1,17 @@
+{
+  "metrics_history": [
+    {
+      "timestamp": 1757163201.687795,
+      "session_id": "bfc7c189-710c-48a3-ad6d-d5282c8baa0d",
+      "text_length": 46,
+      "text_type": "unknown",
+      "agents_used": [],
+      "processing_time": 0.0006673336029052734,
+      "improvements_count": 0,
+      "quality_score": 0,
+      "knowledge_guidelines_used": 0,
+      "user_feedback": null
+    }
+  ],
+  "last_updated": 1757163201.6878028
+}

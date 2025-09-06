@@ -22,19 +22,27 @@ class AgentCoordinator:
         # Try to initialize knowledge base if available
         if use_knowledge_base:
             try:
+                # Try real knowledge base first
                 from knowledge.vector_store import VectorStore
                 from knowledge.retrieval import KnowledgeRetrieval
                 
                 vector_store = VectorStore()
                 if vector_store.get_collection_info()['count'] > 0:
                     self.knowledge_retrieval = KnowledgeRetrieval(vector_store)
-                    print("Knowledge base loaded successfully")
+                    print("Real knowledge base loaded successfully")
                 else:
-                    print("Knowledge base empty - run setup_knowledge_base.py first")
-                    self.use_knowledge_base = False
+                    raise Exception("Real knowledge base empty")
+                    
             except Exception as e:
-                print(f"Could not load knowledge base: {e}")
-                self.use_knowledge_base = False
+                print(f"Real knowledge base not available: {e}")
+                # Fallback to mock knowledge base
+                try:
+                    from knowledge_mock import MockKnowledgeRetrieval
+                    self.knowledge_retrieval = MockKnowledgeRetrieval()
+                    print("Mock knowledge base loaded successfully")
+                except Exception as e2:
+                    print(f"Could not load mock knowledge base: {e2}")
+                    self.use_knowledge_base = False
     
     def process_text(self, text: str, selected_agents: List[str] = None) -> Dict[str, Any]:
         """Process text through selected agents"""
@@ -61,8 +69,14 @@ class AgentCoordinator:
         # Step 3: Process with each agent
         current_text = text
         
+        # Create context for agents
+        agent_context = {
+            "knowledge_retrieval": self.knowledge_retrieval if self.use_knowledge_base else None,
+            "text_analysis": analysis
+        }
+        
         if "grammar" in agents_to_use:
-            grammar_result = self.grammar.analyze(current_text)
+            grammar_result = self.grammar.analyze(current_text, context=agent_context)
             results["agent_results"]["grammar"] = grammar_result
             
             # Apply basic corrections for demonstration
@@ -81,7 +95,7 @@ class AgentCoordinator:
                     })
         
         if "style" in agents_to_use:
-            style_result = self.style.analyze(current_text)
+            style_result = self.style.analyze(current_text, context=agent_context)
             results["agent_results"]["style"] = style_result
             
             # Add style recommendations (not automatic corrections)
@@ -108,18 +122,24 @@ class AgentCoordinator:
                     "reference": rec.get("pdf_reference", "")
                 })
         
-        # Step 4: Get knowledge base guidelines if available
-        if self.use_knowledge_base and self.knowledge_retrieval:
-            try:
-                guidelines = self.knowledge_retrieval.get_relevant_guidelines(
-                    text=text,
-                    agent_type="style",  # Default to style guidelines
-                    issues=analysis.get("issues_detected", []),
-                    n_results=3
-                )
-                results["knowledge_guidelines"] = guidelines
-            except Exception as e:
-                print(f"Error retrieving guidelines: {e}")
+        # Step 4: Collect all knowledge base guidelines from agents
+        all_kb_guidelines = []
+        for agent_name, agent_result in results["agent_results"].items():
+            kb_guidelines = agent_result.get("kb_guidelines", [])
+            for guideline in kb_guidelines:
+                guideline["source_agent"] = agent_name
+                all_kb_guidelines.append(guideline)
+        
+        # Remove duplicates and limit results
+        seen_content = set()
+        unique_guidelines = []
+        for guideline in all_kb_guidelines:
+            content_key = guideline["content"][:100]  # Use first 100 chars as key
+            if content_key not in seen_content:
+                seen_content.add(content_key)
+                unique_guidelines.append(guideline)
+        
+        results["knowledge_guidelines"] = unique_guidelines[:5]  # Limit to 5 guidelines
         
         # Step 5: Final validation
         if "validator" in agents_to_use:

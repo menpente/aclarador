@@ -1,0 +1,349 @@
+[
+  {
+    "id": "23dff66e-de90-4cb3-a034-866e648ef1fe",
+    "session_id": "sim_session_0",
+    "original_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "processed_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "user_rating": 5,
+    "feedback_type": "praise",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "style"
+    ],
+    "processing_time": 0.7394180500976237,
+    "timestamp": 1756705333.639862,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "9b9feeb7-7f3b-4e26-bad3-deafa4530f98",
+    "session_id": "sim_session_1",
+    "original_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "processed_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "user_rating": 4,
+    "feedback_type": "correction",
+    "specific_feedback": "Las sugerencias son muy apropiadas",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 3.0948773712328577,
+    "timestamp": 1754822880.64031,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "377ce3cb-4905-4f2d-b2be-3fc95a2d6572",
+    "session_id": "sim_session_2",
+    "original_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "processed_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "user_rating": 2,
+    "feedback_type": "praise",
+    "specific_feedback": "El sistema es muy lento",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 2.6131096717129996,
+    "timestamp": 1756872092.640359,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "17cdfc13-c3ed-428b-bb12-632966bc9a55",
+    "session_id": "sim_session_3",
+    "original_text": "El documento contiene información importante que que debe ser revisada.",
+    "processed_text": "El documento contiene información importante que que debe ser revisada.",
+    "user_rating": 4,
+    "feedback_type": "correction",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "style"
+    ],
+    "processing_time": 0.7624698961301426,
+    "timestamp": 1754945535.6403918,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "f0517ccc-d6b3-4e08-aa3f-f87a3c957981",
+    "session_id": "sim_session_4",
+    "original_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "processed_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "user_rating": 5,
+    "feedback_type": "praise",
+    "specific_feedback": "Me ayudó mucho a mejorar mi texto",
+    "agent_used": [
+      "grammar",
+      "style",
+      "seo"
+    ],
+    "processing_time": 3.8829775455668005,
+    "timestamp": 1756761949.6404202,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "fd6384b5-0635-4734-b66f-41fa6434c32b",
+    "session_id": "sim_session_5",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 4,
+    "feedback_type": "praise",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "style"
+    ],
+    "processing_time": 4.759055294839678,
+    "timestamp": 1754601675.640446,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "8e0a64c0-2485-4387-bc02-f8fb04de4d5e",
+    "session_id": "sim_session_6",
+    "original_text": "El documento contiene información importante que que debe ser revisada.",
+    "processed_text": "El documento contiene información importante que que debe ser revisada.",
+    "user_rating": 3,
+    "feedback_type": "complaint",
+    "specific_feedback": "Regular, cumple su función",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 1.374071674661043,
+    "timestamp": 1755271160.64047,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "40526db2-feee-43ac-90a5-c3db6840fd4f",
+    "session_id": "sim_session_7",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 3,
+    "feedback_type": "correction",
+    "specific_feedback": "Está bien pero podría mejorar",
+    "agent_used": [
+      "grammar",
+      "style"
+    ],
+    "processing_time": 3.143992703674123,
+    "timestamp": 1756495894.6404932,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "4cc86178-4af8-4625-890e-5e85639e8052",
+    "session_id": "sim_session_8",
+    "original_text": "El documento contiene información importante que que debe ser revisada.",
+    "processed_text": "El documento contiene información importante que que debe ser revisada.",
+    "user_rating": 4,
+    "feedback_type": "suggestion",
+    "specific_feedback": "Me ayudó mucho a mejorar mi texto",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 0.9259457640983038,
+    "timestamp": 1754722432.640515,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "a00cb28a-edaa-4212-8c73-d2c905a305ce",
+    "session_id": "sim_session_9",
+    "original_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "processed_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "user_rating": 5,
+    "feedback_type": "correction",
+    "specific_feedback": "Me ayudó mucho a mejorar mi texto",
+    "agent_used": [
+      "grammar",
+      "style",
+      "seo"
+    ],
+    "processing_time": 1.2769822557774302,
+    "timestamp": 1755510073.640537,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "8d832038-114f-4c86-9db5-bb0acc648b06",
+    "session_id": "sim_session_10",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 2,
+    "feedback_type": "complaint",
+    "specific_feedback": "El sistema es muy lento",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 4.826970385740091,
+    "timestamp": 1756828593.640558,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "d83f18fe-c88e-4a2d-a1f3-ba537a36f772",
+    "session_id": "sim_session_11",
+    "original_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "processed_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "user_rating": 3,
+    "feedback_type": "praise",
+    "specific_feedback": "Algunas sugerencias son útiles",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 1.892092472446621,
+    "timestamp": 1756999516.640584,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "6b89ac16-c46c-40f5-b8b6-06f0b9f29757",
+    "session_id": "sim_session_12",
+    "original_text": "La empresa fue fundada en 1990 y ha crecido mucho desde entonces.",
+    "processed_text": "La empresa fue fundada en 1990 y ha crecido mucho desde entonces.",
+    "user_rating": 4,
+    "feedback_type": "suggestion",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "grammar",
+      "style",
+      "seo"
+    ],
+    "processing_time": 3.061320052271509,
+    "timestamp": 1755578062.640608,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "1da87a82-0734-4333-926a-c62928472bbd",
+    "session_id": "sim_session_13",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 5,
+    "feedback_type": "suggestion",
+    "specific_feedback": "Me ayudó mucho a mejorar mi texto",
+    "agent_used": [
+      "grammar",
+      "style",
+      "seo"
+    ],
+    "processing_time": 3.48439784611639,
+    "timestamp": 1755725922.640631,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "f7bef6bb-df32-4867-99f6-d91046e0360a",
+    "session_id": "sim_session_14",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 4,
+    "feedback_type": "complaint",
+    "specific_feedback": "Las sugerencias son muy apropiadas",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 4.696164841783114,
+    "timestamp": 1754843291.640652,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "5494e382-b664-4411-be88-45cf1eee5d0e",
+    "session_id": "sim_session_15",
+    "original_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "processed_text": "Los usuarios pueden acceder a la plataforma desde cualquier dispositivo.",
+    "user_rating": 4,
+    "feedback_type": "suggestion",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "grammar"
+    ],
+    "processing_time": 2.56354303409993,
+    "timestamp": 1757038132.640673,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "f597e077-d66f-4be4-9b1e-0a47db0f7c5d",
+    "session_id": "sim_session_16",
+    "original_text": "La empresa fue fundada en 1990 y ha crecido mucho desde entonces.",
+    "processed_text": "La empresa fue fundada en 1990 y ha crecido mucho desde entonces.",
+    "user_rating": 4,
+    "feedback_type": "suggestion",
+    "specific_feedback": "Las sugerencias son muy apropiadas",
+    "agent_used": [
+      "seo"
+    ],
+    "processing_time": 3.721205766057295,
+    "timestamp": 1756722607.640694,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "da703e3e-c742-45bc-a588-dada19714a02",
+    "session_id": "sim_session_17",
+    "original_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "processed_text": "Nuestro sitio web ofrece servicios de consultoría en marketing digital.",
+    "user_rating": 4,
+    "feedback_type": "correction",
+    "specific_feedback": "Me ayudó mucho a mejorar mi texto",
+    "agent_used": [
+      "grammar",
+      "style",
+      "seo"
+    ],
+    "processing_time": 4.232126542561755,
+    "timestamp": 1756284560.640716,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "a64ef726-dfe1-493e-921b-477d334659a4",
+    "session_id": "sim_session_18",
+    "original_text": "Este es un texto de ejemplo para probar el sistema.",
+    "processed_text": "Este es un texto de ejemplo para probar el sistema.",
+    "user_rating": 4,
+    "feedback_type": "praise",
+    "specific_feedback": "Excelente corrección, muy útil",
+    "agent_used": [
+      "grammar"
+    ],
+    "processing_time": 2.397607005017269,
+    "timestamp": 1755735566.640737,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "82b11e6c-0bcb-41e9-a4d6-50569a2add34",
+    "session_id": "sim_session_19",
+    "original_text": "El documento contiene información importante que que debe ser revisada.",
+    "processed_text": "El documento contiene información importante que que debe ser revisada.",
+    "user_rating": 2,
+    "feedback_type": "praise",
+    "specific_feedback": "No entiendo las explicaciones",
+    "agent_used": [
+      "grammar"
+    ],
+    "processing_time": 4.671065836384633,
+    "timestamp": 1756005556.640758,
+    "user_corrections": null,
+    "improvement_areas": null
+  },
+  {
+    "id": "1574427a-1e30-4d5c-8ceb-a6a8176462f3",
+    "session_id": "18bfe2a9-75e4-4bbd-bd1d-f22005949b8f",
+    "original_text": "Este es un texto de prueba para el sistema de feedback.",
+    "processed_text": "Este es un texto de prueba para él sistema de feedback.",
+    "user_rating": 4.5,
+    "feedback_type": "praise",
+    "specific_feedback": "Excelente corrección!",
+    "agent_used": [
+      "grammar"
+    ],
+    "processing_time": 6.604194641113281e-05,
+    "timestamp": 1757163201.6424682,
+    "user_corrections": null,
+    "improvement_areas": null
+  }
+]

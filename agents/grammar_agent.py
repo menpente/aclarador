@@ -9,10 +9,26 @@ class GrammarAgent(BaseAgent):
     
     def analyze(self, text: str, context: Dict[str, Any] = None) -> Dict[str, Any]:
         """Analyze grammar and suggest corrections"""
+        corrections = self._find_grammar_issues(text)
+        
+        # Add knowledge base guidelines if available
+        kb_guidelines = []
+        if context and context.get("knowledge_retrieval"):
+            try:
+                kb_guidelines = context["knowledge_retrieval"].get_relevant_guidelines(
+                    text=text,
+                    agent_type="grammar",
+                    issues=["grammar_error"],
+                    n_results=2
+                )
+            except Exception as e:
+                print(f"Error retrieving grammar guidelines: {e}")
+        
         return {
-            "corrections": self._find_grammar_issues(text),
+            "corrections": corrections,
             "confidence": 0.85,
-            "agent": self.name
+            "agent": self.name,
+            "kb_guidelines": kb_guidelines
         }
     
     def get_capabilities(self) -> List[str]:

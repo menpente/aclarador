@@ -9,10 +9,30 @@ class StyleAgent(BaseAgent):
     
     def analyze(self, text: str, context: Dict[str, Any] = None) -> Dict[str, Any]:
         """Analyze style and suggest improvements"""
+        improvements = self._find_style_issues(text)
+        
+        # Add knowledge base guidelines if available
+        kb_guidelines = []
+        if context and context.get("knowledge_retrieval"):
+            try:
+                issues = ["long_sentence"] if any(len(s.split()) > 30 for s in text.split('.')) else []
+                if any(indicator in text.lower() for indicator in ["fue", "fueron", "es", "son"]):
+                    issues.append("passive_voice")
+                
+                kb_guidelines = context["knowledge_retrieval"].get_relevant_guidelines(
+                    text=text,
+                    agent_type="style", 
+                    issues=issues,
+                    n_results=3
+                )
+            except Exception as e:
+                print(f"Error retrieving style guidelines: {e}")
+        
         return {
-            "improvements": self._find_style_issues(text),
+            "improvements": improvements,
             "readability_score": self._calculate_readability(text),
-            "agent": self.name
+            "agent": self.name,
+            "kb_guidelines": kb_guidelines
         }
     
     def get_capabilities(self) -> List[str]:
